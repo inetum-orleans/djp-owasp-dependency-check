@@ -1,0 +1,8 @@
+FROM owasp/dependency-check:{{ cookiecutter.dependency_check_version }}
+
+USER root
+RUN chown -R dependencycheck:dependencycheck /usr/share/dependency-check /report
+
+USER dependencycheck
+
+VOLUME /usr/share/dependency-check/data

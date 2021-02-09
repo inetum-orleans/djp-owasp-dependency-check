@@ -1,0 +1,4 @@
+{
+  "directory": ".docker/owasp-dependency-check",
+  "dependency_check_version": "latest"
+}
