@@ -1,4 +1,4 @@
-FROM owasp/dependency-check:{{ cookiecutter.dependency_check_version }}
+FROM owasp/dependency-check:{{ '{{ versions.dependencyCheck }}' }}
 
 USER root
 RUN chown -R dependencycheck:dependencycheck /usr/share/dependency-check /report
